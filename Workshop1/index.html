@@ -1,135 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StudyNest - Student Learning Resource Platform</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="brand">
-            <h1>StudyNest</h1>
-            <p>Your place to learn, practise and grow</p>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#materials">Materials</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#audio">Audio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="brand">
+        <h1>StudyNest</h1>
+        <p>Your place to learn, practise and grow</p>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#materials">Materials</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#audio">Audio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div class="page">
-        <main>
+      <main>
+        <section id="home" class="banner">
+          <h2>Welcome, Students!</h2>
+          <p>
+            StudyNest brings your
+            <strong
+              >course notes, tutorials and study tools together in one
+              place.</strong
+            >
+          </p>
+          <figure>
+            <img
+              src="images/desk.svg"
+              alt="A study desk with a computer screen and an apple"
+            />
+            <figcaption>A tidy study space helps you focus.</figcaption>
+          </figure>
+        </section>
 
-            <section id="home" class="banner">
-                <h2>Welcome, Students!</h2>
-                <p>StudyNest brings your <strong>course notes, tutorials and study tools together in one place.</strong></p>
-                <figure>
-                    <img src="images/desk.svg" alt="A study desk with a computer screen and an apple">
-                    <figcaption>A tidy study space helps you focus.</figcaption>
-                </figure>
-            </section>
+        <section id="courses">
+          <h2>Our Courses</h2>
+          <div class="course-grid">
+            <article class="card featured">
+              <img
+                src="images/coding.svg"
+                alt="Code editor showing HTML and CSS"
+              />
+              <h3>Web Development</h3>
+              <p>
+                Learn to build web pages with HTML and CSS. This is a good first
+                course for beginners.
+              </p>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
+                target="_blank"
+                >Start learning on MDN</a
+              >
+            </article>
+            <article class="card">
+              <img src="images/database.svg" alt="Stacked database cylinders" />
+              <h3>Databases</h3>
+              <p>Understand tables, keys and how to write SQL queries.</p>
+              <a href="https://www.w3schools.com/sql/" target="_blank"
+                >SQL tutorial</a
+              >
+            </article>
+            <article class="card">
+              <img
+                src="images/books.svg"
+                alt="A row of colourful study books"
+              />
+              <h3>Academic Skills</h3>
+              <p>Improve your note taking, writing and exam preparation.</p>
+              <a href="#materials">See study materials</a>
+            </article>
+          </div>
+        </section>
 
-            <section id="courses">
-                <h2>Our Courses</h2>
-                <div class="course-grid">
-                    <article class="card featured">
-                        <img src="images/coding.svg" alt="Code editor showing HTML and CSS">
-                        <h3>Web Development</h3>
-                        <p>Learn to build web pages with HTML and CSS. This is a good first course for beginners.</p>
-                        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank">Start learning on MDN</a>
-                    </article>
-                    <article class="card">
-                        <img src="images/database.svg" alt="Stacked database cylinders">
-                        <h3>Databases</h3>
-                        <p>Understand tables, keys and how to write SQL queries.</p>
-                        <a href="https://www.w3schools.com/sql/" target="_blank">SQL tutorial</a>
-                    </article>
-                    <article class="card">
-                        <img src="images/books.svg" alt="A row of colourful study books">
-                        <h3>Academic Skills</h3>
-                        <p>Improve your note taking, writing and exam preparation.</p>
-                        <a href="#materials">See study materials</a>
-                    </article>
-                </div>
-            </section>
+        <section id="materials">
+          <h2>Study Materials</h2>
+          <div class="card-list">
+            <article class="card">
+              <h3>HTML Notes</h3>
+              <ul>
+                <li>Page structure</li>
+                <li>Semantic elements</li>
+                <li>Links and images</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>CSS Notes</h3>
+              <ul>
+                <li>Selectors and the box model</li>
+                <li>Flexbox and Grid</li>
+                <li>Media queries</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Study Routine</h3>
+              <ol>
+                <li>Read the lesson</li>
+                <li>Practise the examples</li>
+                <li>Review after one day</li>
+              </ol>
+            </article>
+          </div>
+        </section>
 
-            <section id="materials">
-                <h2>Study Materials</h2>
-                <div class="card-list">
-                    <article class="card">
-                        <h3>HTML Notes</h3>
-                        <ul>
-                            <li>Page structure</li>
-                            <li>Semantic elements</li>
-                            <li>Links and images</li>
-                        </ul>
-                    </article>
-                    <article class="card">
-                        <h3>CSS Notes</h3>
-                        <ul>
-                            <li>Selectors and the box model</li>
-                            <li>Flexbox and Grid</li>
-                            <li>Media queries</li>
-                        </ul>
-                    </article>
-                    <article class="card">
-                        <h3>Study Routine</h3>
-                        <ol>
-                            <li>Read the lesson</li>
-                            <li>Practise the examples</li>
-                            <li>Review after one day</li>
-                        </ol>
-                    </article>
-                </div>
-            </section>
+        <section id="video">
+          <h2>Video Tutorial</h2>
+          <figure>
+            <video controls preload="metadata" poster="images/video-cover.png">
+              <source src="media/html-basics.mp4" type="video/mp4" />
+              Your browser does not support the video element.
+            </video>
+            <figcaption>A short silent introduction to HTML basics.</figcaption>
+          </figure>
+        </section>
 
-            <section id="video">
-                <h2>Video Tutorial</h2>
-                <figure>
-                    <video controls preload="metadata" poster="images/video-cover.png">
-                        <source src="media/html-basics.mp4" type="video/mp4">
-                        Your browser does not support the video element.
-                    </video>
-                    <figcaption>A short silent introduction to HTML basics.</figcaption>
-                </figure>
-            </section>
+        <section id="audio">
+          <h2>Focus Sound</h2>
+          <p>Play this calm background sound while you revise.</p>
+          <audio controls>
+            <source src="media/focus-sound.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </section>
+      </main>
 
-            <section id="audio">
-                <h2>Focus Sound</h2>
-                <p>Play this calm background sound while you revise.</p>
-                <audio controls>
-                    <source src="media/focus-sound.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </section>
-
-        </main>
-
+      <aside>
+        <section>
+          <h2>Announcements</h2>
+          <ul>
+            <li>Complete the Week 1 workshop.</li>
+            <li>Push your work to GitHub.</li>
+            <li>Test your site on a small screen.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Useful Links</h2>
+          <ul>
+            <li>
+              <a
+                href="https://fullstack.heraldcollege.edu.np/guide"
+                target="_blank"
+                >Student Guide</a
+              >
+            </li>
+            <li>
+              <a href="https://docs.github.com/en/get-started" target="_blank"
+                >GitHub Docs</a
+              >
+            </li>
+            <li>
+              <a href="https://validator.w3.org/" target="_blank"
+                >HTML Validator</a
+              >
+            </li>
+          </ul>
+        </section>
+      </aside>
     </div>
 
     <footer id="contact">
-        <div>
-            <h3>StudyNest</h3>
-            <p>A workshop project for student learning.</p>
-        </div>
-        <div>
-            <h3>Quick Links</h3>
-            <p><a href="#home">Back to top</a></p>
-        </div>
-        <div>
-            <h3>Contact</h3>
-            <p><a href="mailto:help@studynest.example">help@studynest.example</a></p>
-        </div>
-        <p class="copyright">&copy; 2026 StudyNest</p>
+      <div>
+        <h3>StudyNest</h3>
+        <p>A workshop project for student learning.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <p><a href="#home">Back to top</a></p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>
+          <a href="mailto:help@studynest.example">help@studynest.example</a>
+        </p>
+      </div>
+      <p class="copyright">&copy; 2026 StudyNest</p>
     </footer>
-
-</body>
+  </body>
 </html>
